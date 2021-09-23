@@ -1,6 +1,6 @@
 import { promises as fs } from "fs";
 
-fs.readFile("./package.json")
+fs.readFile("./package.json", "utf-8")
   // 'then' is for RESOLVED promises
   .then((fileContents) => {
     console.log(fileContents);
